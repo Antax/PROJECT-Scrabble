@@ -93,6 +93,15 @@ public class SacDeLettres{
         this.sac[indiceSac] = new Lettre();
     }
 
+    //test si le sac est vide afin que les joueurs ne piochent pas dedans
+    public bool estVide(){
+        for (int i = 0; i<100;i++){
+            if this.sac[i].car !='.';
+            return false; 
+        }
+        return true;
+    }
+
     //juste pour tester que le sac s'actualise bien, ce qui n'est pas le cas (les lettres ne sont pas retirées du sac quand elles sont piochées)
     String SacToString(){
         String str = " ";
