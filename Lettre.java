@@ -56,6 +56,9 @@ public class Lettre {
             case 'Z':
                 this.points=10;
             break;
+            default :
+                this.points=0;
+            break;
 	}
     }
         
